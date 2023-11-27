@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./asset/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./asset/css/helper.css">
+    <link rel="stylesheet" type="text/css" href="./asset/css/layout.css">
+    <title>INITO</title>
+</head>
+
+<body>
+    <header class="section--header">
+        <div class="container d-flex jc-space-between alt-center">
+            <a href="index.html" class="header--logo">
+                <img src="./asset/images/logo/logo-sm.svg" alt="logo">
+            </a>
+
+            <div class="header--group-right d-flex alt-center font-16-primary">
+                <!-- When click on the button icon-bar-menu, will take a action in function "openNav()" -->
+                <button type="button" class="button btn-bar-menu-mb c-pointer" onclick="openNav()"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                        <path d="M9.16699 12.8333H34.8337" stroke="black" stroke-opacity="0.95" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9.16699 22H34.8337" stroke="black" stroke-opacity="0.95" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9.16699 31.1667H34.8337" stroke="black" stroke-opacity="0.95" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </button>
+
+                <!-- The function receives id "mySidenav" to display the menu, pushing the menu to appear from the left -->
+                <nav id="mySidenav" class="sidenav header__nav-menu tablet-menu">
+                    <button type="button" class="button closebtn d-none p-absolute b-none" id="btnCloseNav" onclick="closeNav()">&times;</button>
+
+                    <ul class="header__nav--list-menu fw-normal d-flex f-direction-col o-hidden">
+                        <li class="header__nav--item-menu">
+                            <a href="#" class="header__link-menu d-block">About</a>
+                        </li>
+                        <li class="header__nav--item-menu">
+                            <a href="#" class="header__link-menu d-block">Stories</a>
+                        </li>
+                        <li class="header__nav--item-menu">
+                            <a href="#" class="header__link-menu d-block">Blog</a>
+                        </li>
+                        <li class="header__nav--item-menu">
+                            <a href="#" class="header__link-menu d-block">FAQ</a>
+                        </li>
+                        <li class="header__nav--item-menu">
+                            <a href="#" class="header__link-menu d-block">Contacts</a>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="header--btn-mb btn btn-secondary d-none">
+                        Get the Inito kit
+                    </a>
+                </nav>
+
+                <a href="#" class="header--btn btn btn-secondary">
+                    Get the Inito kit
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- SECTION BANNER -->
+        <section class="section--banner-head bg-images d-flex jc-end-md">
+            <div class="container--banner m-zero">
+                <div class="grid--banner d-grid alt-center">
+                    <div class="grid--banner-item-content d-grid alt-center">
+                        <div class="item--banner-content d-grid">
+                            <h2 class="font-48-24 heading-color heading-banner">Track your fertility hormones at home, in 5 minutes.</h2>
+                            <p class="font-16-14 sub-heading-banner fw-500">Get accurate results of Estrogen, LH and Progesterone with Inito, the all-in-one, FDA-registered fertility monitor.</p>
+                        </div>
+
+                        <a href="#" class="btn btn-primary">Learn more</a>
+                    </div>
+
+                    <div class="grid--banner-item-img alt-end">
+                        <img src="./asset/images/banner/handle-phone.png" alt="Handle Phone">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION BRAND -->
+        <section class="section--brand">
+            <div class="container container--brands d-flex f-direction-col">
+                <h2 class="title-brands font-16-14 t-align-center">AS SEEN ON</h2>
+
+                <div class="logo-brands d-flex f-wrap jc-space-around bg-images">
+                    <img class="logo-brands-desktop" src="./asset/images/logo/logo-brand-mb-1.png" alt="The Week">
+                    <img class="logo-brands-desktop" src="./asset/images/logo/logo-brand-mb-2.png" alt="Entrepreneur">
+                    <img class="logo-brands-desktop" src="./asset/images/logo/logo-brand-mb-3.png" alt="Bloongberg">
+                    <img class="logo-brands-desktop" src="./asset/images/logo/logo-brand-mb-4.png" alt="Forbes">
+                    <img class="logo-brands-desktop" src="./asset/images/logo/logo-brand-mb-5.png" alt="Washington">
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION DIFFERENT -->
+        <section class="section--body-secondary">
+            <div class="container--bg d">
+                <div class="grid--bg d-flex f-direction-col">
+                    <div class="grid--item-bg d-flex f-direction-col alt-start rgap-24-16">
+                        <h2 class="heading item-title font-36-18">Not all ovulation tests are created equal</h2>
+                        <p class="item-content-mb item-content-prim font-15-14">Most ovulation tests predict your fertile days by tracking Estrogen and Luteinizing Hormone (LH), but fail to measure the hormone that actually confirms your ovulation and supports pregnancy: <b>Progesterone.</b></p>
+                    </div>
+
+                    <div class="grid--item-bg d-flex f-direction-col alt-start rgap-24-16">
+                        <h3 class="heading item-title font-36-18">What makes Inito different?</h3>
+                        <p class="item-content-mb item-content-secon font-15-14">Inito is the only fertility monitor that measures all <b>3 hormones</b> on a single test strip, showing you a full picture of your cycles with results unique to your body.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ====SECTION PREDICT==== -->
+        <section class="section--body-secondary section--margin-120-80 ">
+            <div class="container--bg-secondary bg-images">
+                <div class="grid--bg-primary d-flex f-direction-col rgap-24">
+                    <div class="grid--item-bg-secon-content d-flex f-direction-col rgap-32-16">
+                        <h2 class="title-bg-secon heading font-36-18">Predict and confirm your ovulation with actual data</h2>
+
+                        <div class="content-bg-secon d-flex f-direction-col rgap-25-22">
+                            <p class="font-15-14">Unlike most ovulation tests that only give you "yes/no" results, Inito provides <b>real numerical values</b> of your fertility hormones.</p>
+                            <p class="font-15-14">If you have irregular cycles, actual data is necessary to know exactly when you ovulate, and when is the best time to try to conceive.</p>
+                        </div>
+                    </div>
+
+                    <div class="grid--item-bg-secon-btn">
+                        <a href="#" class="btn btn-secondary">Get the Inito kit</a>
+                    </div>
+                </div>
+
+                <div class="grid--bg-secondary d-flex jc-center">
+                    <img class="img-predict-primary" src="./asset/images/image_body/phone-main.png" alt="Phone">
+                </div>
+
+                <div class="grid--bg-third d-flex f-direction-col">
+                    <img class="img-predict-third" src="./asset/images/image_body/Group 11 (1).svg" alt="Graph">
+
+                    <div class="content-graph d-flex jc-center">
+                        <div class="font-15-14 d-flex alt-center cgap-8">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                                    <circle cx="6" cy="6.5" r="6" fill="#1F94AA"/>
+                                </svg>
+                            </span>
+                            <span>Estrogen</span>
+                        </div>
+
+                        <div class="font-15-14 d-flex alt-center cgap-8">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                                    <circle cx="6" cy="6.5" r="6" fill="#AA92E1"/>
+                                </svg>
+                            </span>
+                            <span>Luteinizing Hormone</span>
+                        </div>
+
+                        <div class="font-15-14 d-flex alt-center cgap-8">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <circle cx="6" cy="6" r="6" fill="#78B1FA"/>
+                                </svg>
+                            </span>
+                            <span>Progesterone</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid--bg-fourth d-flex f-direction-col rgap-24">
+                    <div class="grid--item-bg-secon-content d-flex f-direction-col rgap-32-16">
+                        <h2 class="title-bg-secon heading font-36-18">Never miss a day again with Inito</h2>
+
+                        <p class="grid-fourth-sub-heading font-15-14">Inito tracks up to <b>6 fertile days</b> and confirms ovulation by measuring all 3 hormones in just 5 minutes:</p>
+
+                        <div class="content-bg-secon d-flex f-direction-col rgap-10-8">
+                            <div class="font-15-14 d-flex alt-center cgap-8">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                                        <circle cx="6" cy="6.5" r="6" fill="#1F94AA"/>
+                                    </svg>
+                                </span>
+                                <span>Estrogen, which rises 3-4 days before ovulation</span>
+                            </div>
+
+                            <div class="font-15-14 d-flex alt-center cgap-8">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                                        <circle cx="6" cy="6.5" r="6" fill="#AA92E1"/>
+                                    </svg>
+                                </span>
+                                <span>LH, which surges 24-36 hours before ovulation</span>
+                            </div>
+
+                            <div class="font-15-14 d-flex alt-center cgap-8">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                        <circle cx="6" cy="6" r="6" fill="#78B1FA"/>
+                                    </svg>
+                                </span>
+                                <span>Progesterone (PdG), which rises after ovulation</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="./asset/javascript/library.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,261 @@
+@media (min-width:378px) {
+    .logo-brands {
+        gap: 3.3rem 5.5rem;
+    }
+}
+
+@media (max-width:576px) {
+    .grid--bg {
+        row-gap: 2.4rem;
+    }
+    .grid--item-bg {
+        background: var(--color-header-and-container-bg);
+        padding-block: var(--padding-block-container-bg);
+        padding-inline: var(--padding-inline-container-bg);
+    }
+    .grid--banner-item-content {
+        max-width: 34.3rem;
+    }
+    .heading-banner {
+        max-width: 100%;
+    }
+    .sub-heading-banner {
+        max-width: 100%;
+    }
+    .sidenav {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.60);
+        width: 100%;
+        font-size: 1.9rem;
+        max-width: 414px;
+        height: 100%;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        padding: 30px 15px 20px 15px;
+        text-align: left;
+        transition: 0.6s ease;
+        /* Ẩn menu vào lề trái. Khi nào active thực hiện click mới xuất hiện */
+        transform: translateX(-100%);
+        overflow: scroll;
+    }
+    .sidenav.active {
+        transform: translateX(0);
+    }
+    .closebtn {
+        display: block;
+        background: none;
+    }
+    .header--btn-mb {
+        display: flex;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 3rem;
+        background-color: unset;
+        border: 2.5px solid #6ae7ffb3;
+        box-shadow: 5px 5px 20px -10px black;
+    }
+    .header__link-menu {
+        color: var(--color-body-bg);
+        line-height: 50px;
+    }
+    .grid--item-bg {
+        border-radius: 2.4rem;
+    }
+    .img-predict-primary {
+        max-width: 20.3rem;
+    }
+    .grid--bg-fourth {
+        order: 3;
+    }
+    .grid--bg-third {
+        order: 4;
+    }
+}
+
+@media (min-width:576px) {
+    .grid--bg {
+        row-gap: 8rem;
+    }
+    .container--bg-secondary {
+        background-image: url("../images/banner/banner-main-primary.png");
+    }
+    .grid--bg-desktop {
+        padding-block: 8rem 5.8rem;
+    }
+    .tablet-menu {
+        display: block;
+    }
+    .header__nav--list-menu {
+        flex-direction: row;
+    }
+    .btn-bar-menu-mb {
+        display: none;
+    }
+    .header__link-menu {
+        color: var(--color-strong-text);
+    }
+    .logo-brands-desktop {
+        min-width: 8.8rem;
+    }
+    .title-brands {
+        line-height: 2.2rem;
+    }
+    .grid--bg {
+        row-gap: 8rem;
+        text-align: center;
+    }
+    .item-content-prim {
+        max-width: 53rem;
+    }
+    .item-content-secon {
+        max-width: 48rem;
+    }
+    .grid--item-bg {
+        align-items: center;
+    }
+    .content-graph {
+        column-gap: 32px;
+    }
+    .container--bg-secondary {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        row-gap: inherit;
+        align-items: center;
+    }
+    .grid--bg-primary {
+        padding-left: 5.7rem;
+    }
+    .grid--bg-third {
+        padding-left: 0.6rem;
+    }
+    .grid--bg-fourth {
+        padding-left: 8.7rem;
+    }
+}
+
+@media (min-width:768px) {
+    .section--header {
+        padding-block: 32.5px;
+    }
+    .section--banner-head {
+        background-image: url("../images/banner/banner-head.svg");
+    }
+    .grid--banner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid--banner-item-content {
+        row-gap: 5rem;
+        padding-inline: inherit;
+        padding-left: 1.6rem;
+    }
+    .item--banner-content {
+        row-gap: 4rem
+    }
+    .section--brand {
+        margin-block: 12rem;
+    }
+    .container--brands {
+        row-gap: 4.4rem;
+    }
+    .logo-brands {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width:834px) {
+    .header--btn {
+        display: none;
+    }
+}
+
+@media (min-width:992px) {}
+
+
+/* Responsive on display desktop */
+
+@media (min-width:1024px) {
+     :root {
+        --font-48-24: 4.8rem;
+        --font-36-18: 3.6rem;
+        --font-32-18: 3.2rem;
+        --font-18-16: 1.6rem;
+        --font-16-14: 1.6rem;
+        --font-15-14: 1.5rem;
+        --font-14-12: 1.4rem;
+        --font--14-11: 1.4rem;
+        --font-14-8: 1.4rem;
+        --font-14: 1.4rem;
+        --font-12-11: 1.2rem;
+        --font-12-10: 1.2rem;
+        --font-11-7: 1.1rem;
+        --font-10-7: 1rem;
+        --line-height-58-32: 5.8rem;
+        --line-height-50-27: 5rem;
+        --line-height-48-27: 4.8rem;
+        --line-height-27-26: 2.7rem;
+        --line-height-26-22: 2.6rem;
+        --line-height-25-22: 2.5rem;
+        --line-height-22-18: 2.2rem;
+        --line-height-22-12: 2.2rem;
+        --line-height-17-18: 1.7rem;
+        --line-height-22-desktop: 2.2rem;
+        --line-height-desktop-inherit: inherit;
+        --margin-section-120-80: 12rem;
+        --row-gap-32-16: 3.2rem;
+        --row-gap-25-22: 2.5rem;
+        --row-gap-24-16: 2.4rem;
+        --padding-block-container-bg-80-24: 8rem 5.8rem;
+        --row-gap-10-8: 1rem;
+    }
+    .section--body-primary {
+        margin-block: 120px 143px;
+    }
+    /* SECTIO PREDICT */
+    .grid--item-bg-desktop-primary {
+        max-width: 43.9rem;
+        width: 100%;
+        padding-left: 8.1rem;
+        /* padding-top: 15rem; */
+    }
+    .grid--item-bg-desktop-secondary {
+        max-width: 35.5rem;
+        max-height: 60rem;
+        width: 100%;
+        height: 100%;
+        padding-right: 12.3rem;
+        padding-top: 8rem;
+    }
+    .grid--item-bg-desktop-third {
+        max-width: 54rem;
+        max-height: 60rem;
+        width: 100%;
+        height: 100%;
+        padding-left: 3rem;
+        padding-top: 7.3rem;
+    }
+    .grid--item-bg-desktop-fourth {
+        max-width: 42.7rem;
+        width: 100%;
+        padding-right: 8.6rem;
+        /* padding-top: 15.8rem; */
+    }
+    .grid--item-desktop-fifth {
+        max-width: 46.3rem;
+        width: 100%;
+        padding-left: 6.7rem;
+        /* padding-top: 15.8rem; */
+    }
+    .grid--item-bg-secondary {
+        padding: 6rem 4.8rem 2.9rem 4.8rem;
+        background-image: url("../images/image_body/bg-primary.svg");
+    }
+}
+
+@media (min-width:1200px) {}
+
+@media (min-width:1440px) {
+    .container--banner {
+        max-width: inherit;
+    }
+}
