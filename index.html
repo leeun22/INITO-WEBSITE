@@ -7,57 +7,62 @@
     <link rel="stylesheet" type="text/css" href="./asset/css/style.css">
     <link rel="stylesheet" type="text/css" href="./asset/css/helper.css">
     <link rel="stylesheet" type="text/css" href="./asset/css/layout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>INITO</title>
 </head>
 
 <body>
     <header class="section--header">
         <div class="container d-flex jc-space-between alt-center">
-            <a href="index.html" class="header--logo">
-                <img src="./asset/images/logo/logo-sm.svg" alt="logo">
-            </a>
-
-            <div class="header--group-right d-flex alt-center font-16-primary">
-                <!-- When click on the button icon-bar-menu, will take a action in function "openNav()" -->
-                <button type="button" class="button btn-bar-menu-mb c-pointer" onclick="openNav()"> 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
-                        <path d="M9.16699 12.8333H34.8337" stroke="black" stroke-opacity="0.95" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M9.16699 22H34.8337" stroke="black" stroke-opacity="0.95" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M9.16699 31.1667H34.8337" stroke="black" stroke-opacity="0.95" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                </button>
-
-                <!-- The function receives id "mySidenav" to display the menu, pushing the menu to appear from the left -->
-                <nav id="mySidenav" class="sidenav header__nav-menu tablet-menu">
-                    <button type="button" class="button closebtn d-none p-absolute b-none" id="btnCloseNav" onclick="closeNav()">&times;</button>
-
-                    <ul class="header__nav--list-menu fw-normal d-flex f-direction-col o-hidden">
-                        <li class="header__nav--item-menu">
-                            <a href="#" class="header__link-menu d-block">About</a>
-                        </li>
-                        <li class="header__nav--item-menu">
-                            <a href="#" class="header__link-menu d-block">Stories</a>
-                        </li>
-                        <li class="header__nav--item-menu">
-                            <a href="#" class="header__link-menu d-block">Blog</a>
-                        </li>
-                        <li class="header__nav--item-menu">
-                            <a href="#" class="header__link-menu d-block">FAQ</a>
-                        </li>
-                        <li class="header__nav--item-menu">
-                            <a href="#" class="header__link-menu d-block">Contacts</a>
-                        </li>
-                    </ul>
-
-                    <a href="#" class="header--btn-mb btn btn-secondary d-none">
-                        Get the Inito kit
-                    </a>
-                </nav>
-
-                <a href="#" class="header--btn btn btn-secondary">
-                    Get the Inito kit
+            <div class="header__logo">
+                <a href="index.html" class="header--logo" title="Inito">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="105" height="40" viewBox="0 0 105 40" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.06348 36.3387H6.29712V15.2654H1.06348V36.3387Z" fill="#112D35"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.68089 2C1.64794 2 0 3.64827 0 5.68122C0 7.71416 1.64794 9.3621 3.68089 9.3621C5.71383 9.3621 7.36178 7.71416 7.36178 5.68122C7.36178 3.64827 5.71383 2 3.68089 2Z" fill="#112D35"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8867 14.8252C17.9553 14.8252 13.1299 19.6506 13.1299 25.582V36.3387H18.3635V25.582C18.3635 22.5366 20.8413 20.0588 23.8867 20.0588C26.932 20.0588 29.4098 22.5366 29.4098 25.582V36.3387H34.6434V25.582C34.6434 19.6506 29.818 14.8252 23.8867 14.8252Z" fill="#112D35"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M58.7756 8.2832H53.542V26.6994C53.542 32.0145 57.866 36.3388 63.1811 36.3388H67.3902V31.1052H63.1811C60.752 31.1052 58.7756 29.1288 58.7756 26.6994V20.4992H65.7547V15.2655H58.7756V8.2832Z" fill="#112D35"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M84.4512 31.1133C81.4932 32.1976 78.2042 30.673 77.1198 27.7147C76.0355 24.7563 77.5601 21.4676 80.5184 20.3833C83.4767 19.299 86.7658 20.8233 87.8501 23.7819C88.9345 26.7402 87.4095 30.0289 84.4512 31.1133ZM104.581 17.649C103.881 15.7394 101.766 14.7588 99.8564 15.4591C98.8195 15.8389 98.06 16.638 97.691 17.5931L97.689 17.5879C97.0087 19.3477 94.1939 21.8706 90.1856 17.9251L90.1873 17.93C87.2551 15.0502 82.8157 13.9354 78.7069 15.4414C73.0238 17.5247 70.095 23.8427 72.178 29.5258C74.2609 35.2092 80.5793 38.1381 86.2627 36.0551C90.3711 34.5491 93.0386 30.8297 93.4154 26.7369L93.4174 26.7418C93.9264 21.1405 97.7047 21.2468 99.3615 22.15L99.3595 22.1451C100.258 22.6357 101.354 22.7541 102.391 22.3744C104.301 21.6744 105.281 19.5587 104.581 17.649Z" fill="#112D35"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M41.4756 36.3387H46.7092V15.2654H41.4756V36.3387Z" fill="#112D35"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M44.092 2C42.0591 2 40.4111 3.64827 40.4111 5.68122C40.4111 7.71416 42.0591 9.3621 44.092 9.3621C46.125 9.3621 47.7729 7.71416 47.7729 5.68122C47.7729 3.64827 46.125 2 44.092 2Z" fill="#112D35"/>
+                    </svg>
                 </a>
             </div>
+
+            <!-- When click on the button icon-bar-menu, will take a action in function "openNav()" -->
+            <div class="button btn-bar-menu-mb c-pointer" onclick="openNav()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                    <path d="M9.16699 12.8333H34.8337" stroke="black" stroke-opacity="0.95" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9.16699 22H34.8337" stroke="black" stroke-opacity="0.95" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9.16699 31.1667H34.8337" stroke="black" stroke-opacity="0.95" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+
+            <!-- The function receives id "mySidenav" to display the menu, pushing the menu to appear from the left -->
+            <nav id="mySidenav" class="sidenav header__nav-menu tablet-menu font-16-primary fw-normal">
+                <button type="button" class="button closebtn d-none p-absolute b-none" id="btnCloseNav" onclick="closeNav()">&times;</button>
+
+                <ul class="header__nav--list-menu heading cgap-secondary fw-normal d-flex f-direction-col alt-center o-hidden">
+                    <li class="header__nav--item-menu">
+                        <a href="#" class="header__link-menu d-block">About</a>
+                    </li>
+                    <li class="header__nav--item-menu">
+                        <a href="#" class="header__link-menu d-block">Stories</a>
+                    </li>
+                    <li class="header__nav--item-menu">
+                        <a href="#" class="header__link-menu d-block">Blog</a>
+                    </li>
+                    <li class="header__nav--item-menu">
+                        <a href="#" class="header__link-menu d-block">FAQ</a>
+                    </li>
+                    <li class="header__nav--item-menu">
+                        <a href="#" class="header__link-menu d-block">Contacts</a>
+                    </li>
+                    <li class="header__nav--item-menu">
+                        <a href="#" class="header--btn-mb btn btn-secondary">  Get the Inito kit</a>
+                    </li>
+                </ul>
+            </nav>
+
         </div>
     </header>
 
@@ -65,11 +70,11 @@
         <!-- SECTION BANNER -->
         <section class="section--banner-head bg-images d-flex jc-end-md">
             <div class="container--banner m-zero">
-                <div class="grid--banner d-grid alt-center">
-                    <div class="grid--banner-item-content d-grid alt-center">
+                <div class="grid--banner d-grid alt-center grid-columns-desktop-2">
+                    <div class="grid--banner-item-content pd-inline-primary d-grid alt-center">
                         <div class="item--banner-content d-grid">
-                            <h2 class="font-48-24 heading-color heading-banner">Track your fertility hormones at home, in 5 minutes.</h2>
-                            <p class="font-16-14 sub-heading-banner fw-500">Get accurate results of Estrogen, LH and Progesterone with Inito, the all-in-one, FDA-registered fertility monitor.</p>
+                            <h2 class="heading-banner heading fw-bold mw-xsmall-100">Track your fertility hormones at home, in <span class="high-light high-light-primary">5 minutes.</span></h2>
+                            <p class="sub-heading-banner sub-heading--lg fw-medium mw-xsmall-100">Get accurate results of Estrogen, LH and Progesterone with Inito, the all-in-one, FDA-registered fertility monitor.</p>
                         </div>
 
                         <a href="#" class="btn btn-primary">Learn more</a>
@@ -85,7 +90,7 @@
         <!-- SECTION BRAND -->
         <section class="section--brand">
             <div class="container container--brands d-flex f-direction-col">
-                <h2 class="title-brands font-16-14 t-align-center">AS SEEN ON</h2>
+                <h2 class="title-brands sub-heading--xxheading--lg t-align-center">AS SEEN ON</h2>
 
                 <div class="logo-brands d-flex f-wrap jc-space-around bg-images">
                     <img class="logo-brands-desktop" src="./asset/images/logo/logo-brand-mb-1.png" alt="The Week">
@@ -98,17 +103,42 @@
         </section>
 
         <!-- SECTION DIFFERENT -->
-        <section class="section--body-secondary">
+        <section class="pd-inline-primary">
             <div class="container--bg d">
                 <div class="grid--bg d-flex f-direction-col">
-                    <div class="grid--item-bg d-flex f-direction-col alt-start rgap-24-16">
-                        <h2 class="heading item-title font-36-18">Not all ovulation tests are created equal</h2>
-                        <p class="item-content-mb item-content-prim font-15-14">Most ovulation tests predict your fertile days by tracking Estrogen and Luteinizing Hormone (LH), but fail to measure the hormone that actually confirms your ovulation and supports pregnancy: <b>Progesterone.</b></p>
+                    <div class="grid--item-bg d-flex f-direction-col alt-start rgap-fifth">
+                        <h2 class="heading item-title item-title-icon heading--xxl line-height-xxl fw-bold p-relative">
+                            Not all ovulation tests are created <span class="high-light high-light-secondary">equal</span>
+                            <span class="icon-text icon-txt-primary-mb icon-txt-primary-desktop p-absolute">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="46" viewBox="0 0 48 46" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.1931 4.04875C20.4391 3.75943 19.669 3.72943 18.9074 3.91677C18.593 3.99379 18.3126 4.31658 18.4522 4.64466C18.9079 5.71686 18.2624 6.48817 17.774 7.26584C14.6671 12.213 10.8229 16.5446 6.65132 20.5929C5.12906 22.0705 3.55014 23.489 2.00574 24.9432C1.79619 25.1406 1.4992 25.2786 1.64547 25.7167C1.79133 26.1539 2.14886 25.9685 2.35919 26.1024C3.95554 27.1199 5.02765 26.0293 6.17667 25.2179C11.9879 21.1149 16.5783 15.882 20.2525 9.80409C20.9248 8.69189 21.484 7.52011 21.77 6.24383C21.9519 5.43061 21.9439 4.62997 21.1931 4.04875Z" fill="#1F94AA"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M29.1594 22.2427C29.2317 21.6297 29.0578 21.2741 28.4881 21.1776C27.9285 21.0827 27.5607 21.1893 27.2307 21.7388C26.5245 22.9142 25.3239 23.5576 24.1988 24.2418C20.2381 26.6521 16.1112 28.7592 12.017 30.9255C11.6948 31.0962 11.3533 31.2516 11.3284 31.7252C11.2973 32.3014 11.838 32.0564 12.0452 32.282C12.7278 33.0248 13.4792 32.6827 14.2047 32.3858C17.9713 30.8435 21.7789 29.3866 25.1994 27.1134C26.3215 26.3676 27.4201 25.5936 28.4407 24.706C28.8922 24.3131 28.8638 23.5773 29.5725 23.3378C29.8612 23.2405 30.0436 22.7119 29.9671 22.2684C29.9274 22.0379 29.9119 21.7588 29.6555 21.704C29.3546 21.6397 29.3635 21.9905 29.1594 22.2427Z" fill="#1F94AA"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M36.1037 36.4466C35.12 35.9515 34.3485 36.009 33.4435 36.3846C31.6999 37.1083 29.8058 37.1179 27.9427 37.1595C25.4801 37.2151 23.0243 37.1063 20.5766 36.7956C19.9565 36.7166 19.3189 36.7507 18.6909 36.7738C18.4518 36.7824 18.1581 36.8215 18.1642 37.2033C18.1687 37.5144 18.3607 37.5934 18.5997 37.7442C20.4631 38.9198 22.6103 38.7985 24.6504 39.0466C27.4316 39.3847 30.2392 39.4408 33.028 38.9736C34.0515 38.8019 35.0367 38.5094 35.9764 38.0687C36.3792 37.8795 36.721 37.6397 36.741 37.1217C36.7625 36.5537 36.3509 36.494 36.1037 36.4466Z" fill="#1F94AA"/>
+                                </svg>
+                            </span>
+                        </h2>
+                        <p class="item-content-mb item-content-prim sub-heading--md fw-medium lh-sub-heading-lg">Most ovulation tests predict your fertile days by tracking Estrogen and Luteinizing Hormone (LH), but fail to measure the hormone that actually confirms your ovulation and supports pregnancy: <b>Progesterone.</b></p>
+
+
                     </div>
 
-                    <div class="grid--item-bg d-flex f-direction-col alt-start rgap-24-16">
-                        <h3 class="heading item-title font-36-18">What makes Inito different?</h3>
-                        <p class="item-content-mb item-content-secon font-15-14">Inito is the only fertility monitor that measures all <b>3 hormones</b> on a single test strip, showing you a full picture of your cycles with results unique to your body.</p>
+                    <div class="grid--item-bg d-flex f-direction-col alt-start rgap-fifth">
+                        <h3 class="heading item-title heading--xxl line-height-xxl fw-bold p-relative">
+                            What makes <span class="high-light high-light-secondary">Inito</span> different?
+                            <span class="icon-text icon-txt-third-mb icon-txt-third-desktop p-absolute">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="43" viewBox="0 0 40 43" fill="none">
+                                    <g clip-path="url(#clip0_3_4617)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23.3234 5.94568C23.376 4.93704 23.4812 3.92839 23.5864 2.91975C23.5697 2.68439 23.5584 2.45436 23.5472 2.22965C23.5233 1.74477 23.5005 1.28468 23.4286 0.849383C23.376 0.530864 23.0604 0 22.85 0C22.5343 0 22.0083 0.265432 21.8505 0.530864C21.4297 1.22099 21.0089 2.01729 20.7984 2.81358C20.1146 5.30864 19.536 7.8037 19.0099 10.3519C18.6943 11.8383 18.6417 13.3247 19.1677 14.758C19.4834 15.5543 19.9568 16.1913 20.9037 16.1913C21.8505 16.1913 22.3765 15.5543 22.6396 14.758C22.9026 14.0148 23.0078 13.2186 23.0604 12.4223C23.113 11.3339 23.1524 10.2589 23.1919 9.18392C23.2314 8.10895 23.2708 7.03395 23.3234 5.94568ZM16.222 41.4074C16.3272 41.8852 16.485 42.4161 17.2215 42.5223C17.2741 42.2459 17.3289 41.9675 17.384 41.6869L17.3842 41.6861C17.6046 40.5654 17.8317 39.4108 17.9579 38.2223C18.4313 34.7716 18.7996 31.321 19.1677 27.8704C19.2203 27.3926 19.1677 26.8618 19.0625 26.3839C18.747 25.3223 17.9053 24.7383 17.011 24.8975C16.1168 25.0568 15.6959 25.7469 15.6959 26.9148C15.7485 28.2951 15.7485 29.7284 15.7485 31.1087C15.7485 31.8537 15.7426 32.5988 15.7368 33.3419C15.7251 34.8225 15.7135 36.2953 15.7485 37.7444C15.7485 38.762 15.9312 39.7794 16.1139 40.7969C16.1503 41.0004 16.187 41.2039 16.222 41.4074ZM39.4726 22.1901C39.2177 22.2473 38.9588 22.3123 38.6982 22.3776C37.9912 22.5548 37.2713 22.7352 36.5795 22.7741L36.0743 22.8217C32.3017 23.1772 28.5731 23.5285 24.7964 23.7827C24.165 23.8358 23.4286 23.6765 22.85 23.4111C22.061 23.0926 22.1136 22.2432 22.85 21.8716C23.2708 21.6593 23.7443 21.5531 24.165 21.5531C29.1624 21.3938 34.1597 21.3407 39.157 21.7655C39.2623 21.7655 39.3675 21.8186 39.4726 21.8716V22.1901ZM13.434 19.1996C14.0477 19.1465 14.6615 19.0934 15.2751 19.058C15.2751 18.9519 15.2751 18.8457 15.3277 18.6864C15.1173 18.6599 14.92 18.6201 14.7228 18.5802C14.5255 18.5405 14.3283 18.5006 14.1178 18.4741C12.2504 18.2618 10.3962 18.0494 8.54189 17.837C6.68762 17.6247 4.83335 17.4124 2.96595 17.2C2.65032 17.1735 2.3347 17.1337 2.01909 17.0938C1.70346 17.054 1.38784 17.0142 1.07223 16.9876C0.546191 16.9876 0.125364 17.2 0.0201578 17.7308C-0.085049 18.3148 0.230571 18.7395 0.756604 18.8988C1.12483 19.0049 1.54565 19.1111 1.96648 19.1111C2.59583 19.137 3.22833 19.1661 3.86244 19.1953C5.8253 19.2856 7.80355 19.3765 9.75174 19.3765C10.9792 19.412 12.2066 19.3058 13.434 19.1996Z" fill="#1F94AA"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_3_4617">
+                                        <rect width="40" height="43" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                        </h3>
+                        <p class="item-content-mb item-content-secon sub-heading--md fw-medium lh-sub-heading-lg">Inito is the only fertility monitor that measures all <b>3 hormones</b> on a single test strip, showing you a full picture of your cycles with results unique to your body.</p>
                     </div>
                 </div>
 
@@ -116,15 +146,15 @@
         </section>
 
         <!-- ====SECTION PREDICT==== -->
-        <section class="section--body-secondary section--margin-120-80 ">
-            <div class="container--bg-secondary bg-images">
-                <div class="grid--bg-primary d-flex f-direction-col rgap-24">
-                    <div class="grid--item-bg-secon-content d-flex f-direction-col rgap-32-16">
-                        <h2 class="title-bg-secon heading font-36-18">Predict and confirm your ovulation with actual data</h2>
+        <section class="mg-inline-primary mg-block-primary">
+            <div class="container container--bg-secondary d-grid alt-center-md jfi-center-md bg-images cgap-secondary-desktop b-radius-24 b-radius-40 pd-inline-secondary pb-block-primary grid-columns-desktop-2">
+                <div class="grid--bg-primary d-flex f-direction-col rgap-third">
+                    <div class="grid--item-bg-secon-content d-flex f-direction-col rgap-primary">
+                        <h2 class="title-bg-secon heading heading--xxl line-height-xxl fw-bold">Predict and confirm your ovulation with <span class="high-light high-light-secondary">actual</span> data</h2>
 
-                        <div class="content-bg-secon d-flex f-direction-col rgap-25-22">
-                            <p class="font-15-14">Unlike most ovulation tests that only give you "yes/no" results, Inito provides <b>real numerical values</b> of your fertility hormones.</p>
-                            <p class="font-15-14">If you have irregular cycles, actual data is necessary to know exactly when you ovulate, and when is the best time to try to conceive.</p>
+                        <div class="content-bg-secon d-flex f-direction-col rgap-fourth">
+                            <p class="sub-heading--md fw-medium lh-sub-heading-lg">Unlike most ovulation tests that only give you "yes/no" results, Inito provides <b>real numerical values</b> of your fertility hormones.</p>
+                            <p class="sub-heading--md fw-medium lh-sub-heading-lg">If you have irregular cycles, actual data is necessary to know exactly when you ovulate, and when is the best time to try to conceive.</p>
                         </div>
                     </div>
 
@@ -138,46 +168,46 @@
                 </div>
 
                 <div class="grid--bg-third d-flex f-direction-col">
-                    <img class="img-predict-third" src="./asset/images/image_body/Group 11 (1).svg" alt="Graph">
+                    <img class="img-predict-third" src="./asset/images/image_body/graph.svg" alt="Graph">
 
                     <div class="content-graph d-flex jc-center">
-                        <div class="font-15-14 d-flex alt-center cgap-8">
+                        <div class="d-flex alt-center cgap-primary">
                             <span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
                                     <circle cx="6" cy="6.5" r="6" fill="#1F94AA"/>
                                 </svg>
                             </span>
-                            <span>Estrogen</span>
+                            <span class="heading title-graph sub-heading--sm fw-medium">Estrogen</span>
                         </div>
 
-                        <div class="font-15-14 d-flex alt-center cgap-8">
+                        <div class="d-flex alt-center cgap-primary">
                             <span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
                                     <circle cx="6" cy="6.5" r="6" fill="#AA92E1"/>
                                 </svg>
                             </span>
-                            <span>Luteinizing Hormone</span>
+                            <span class="heading title-graph sub-heading--sm fw-medium">Luteinizing Hormone</span>
                         </div>
 
-                        <div class="font-15-14 d-flex alt-center cgap-8">
+                        <div class="d-flex alt-center cgap-primary">
                             <span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                                     <circle cx="6" cy="6" r="6" fill="#78B1FA"/>
                                 </svg>
                             </span>
-                            <span>Progesterone</span>
+                            <span class="heading title-graph sub-heading--regular fw-medium">Progesterone</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="grid--bg-fourth d-flex f-direction-col rgap-24">
-                    <div class="grid--item-bg-secon-content d-flex f-direction-col rgap-32-16">
-                        <h2 class="title-bg-secon heading font-36-18">Never miss a day again with Inito</h2>
+                <div class="grid--bg-fourth d-flex f-direction-col rgap-third">
+                    <div class="grid--item-bg-secon-content d-flex f-direction-col rgap-primary">
+                        <h2 class="title-bg-secon heading heading--xxl line-height-xxl fw-bold">Never <span class="high-light high-light-secondary">miss</span> a day again with Inito</h2>
 
-                        <p class="grid-fourth-sub-heading font-15-14">Inito tracks up to <b>6 fertile days</b> and confirms ovulation by measuring all 3 hormones in just 5 minutes:</p>
+                        <p class="sub-heading--md fw-medium lh-sub-heading-lg">Inito tracks up to <b>6 fertile days</b> and confirms ovulation by measuring all 3 hormones in just 5 minutes:</p>
 
-                        <div class="content-bg-secon d-flex f-direction-col rgap-10-8">
-                            <div class="font-15-14 d-flex alt-center cgap-8">
+                        <div class="content-bg-secon d-flex f-direction-col rgap-sixth">
+                            <div class="sub-heading--md fw-medium lh-sub-heading-lg d-flex alt-center cgap-primary">
                                 <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
                                         <circle cx="6" cy="6.5" r="6" fill="#1F94AA"/>
@@ -186,7 +216,7 @@
                                 <span>Estrogen, which rises 3-4 days before ovulation</span>
                             </div>
 
-                            <div class="font-15-14 d-flex alt-center cgap-8">
+                            <div class="sub-heading--md fw-medium lh-sub-heading-lg d-flex alt-center cgap-primary">
                                 <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
                                         <circle cx="6" cy="6.5" r="6" fill="#AA92E1"/>
@@ -195,7 +225,7 @@
                                 <span>LH, which surges 24-36 hours before ovulation</span>
                             </div>
 
-                            <div class="font-15-14 d-flex alt-center cgap-8">
+                            <div class="sub-heading--md fw-medium lh-sub-heading-lg d-flex alt-center cgap-primary">
                                 <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                                         <circle cx="6" cy="6" r="6" fill="#78B1FA"/>
@@ -210,9 +240,513 @@
 
             </div>
         </section>
+
+        <!-- SECTION PROGESTERONE -->
+        <section class="mg-block-primary">
+            <div class="container container--bg-third d-grid alt-center-md jfi-center-md rgap-seventh cgap-secondary-desktop grid-columns-desktop-2">
+                <div class="grid--primary-bg-third d-flex f-direction-col">
+                    <h2 class="grid--item-primary-heading heading heading--xlg fw-bold line-height-xl">“Inito is all that you need to give you the <span class="high-light high-light-third">best</span> chance of conception."</h2>
+
+                    <figure class="grid--item-secondary-bg-third d-flex alt-center">
+                        <div class="image-avatar">
+                            <img src="./asset/images/image_body/avatar.png" alt="Avatar">
+                        </div>
+
+                        <figcaption class="info-user d-grid">
+                            <h6 class="heading fw-semibold heading--sm ">Dr. Rachel Wagner</h6>
+                            <span class="info-more">MD</span>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="grid--secondary-bg-third bg-images b-radius-24 b-radius-40 d-grid pd-inline-secondary pb-block-primary">
+                    <h3 class="grid--item-secon-heading heading heading--xlg fw-bold line-height-xl">Why measure Progesterone?</h3>
+
+                    <div class="grid--item-third-sub-heading d-grid">
+                        <p class="sub-heading--md lh-sub-heading-lg fw-medium"><b>Anovulation</b> (having a menstrual cycle with no egg) is actually a common occurrence, affecting 1 in 10 women*.</p>
+                        <p class="sub-heading--md lh-sub-heading-lg fw-medium">A sure way to confirm ovulation is a rise in <b>Progesterone level</b> after peak fertility. Progesterone also supports implantation and elevated levels of PdG during the 7-10 day window after ovulation correlates to higher chances
+                            of a successful pregnancy</p>
+                    </div>
+
+                    <p class="grid--item-note sub-heading--regular lh-sub-heading-md fw-medium">* Source: National Institutes of Health</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION REASONS TO CHOOSE US -->
+        <section class="mg-block-primary">
+            <div class="container container--bg-fourth d-flex f-direction-col jc-start cgap-secondary">
+                <h2 class="title-heading-fourth heading heading--xxl fw-bold line-height-xxl t-align-start">Why Inito is the smarter way to get pregnant</h2>
+
+                <div class="grid--row d-grid">
+                    <div class="grid--row-primary d-grid alt-center-md jfi-center-md rgap-seventh cgap-secondary-desktop grid-columns-desktop-2">
+                        <div class="grid--item-images b-radius-24 b-radius-40 o-hidden">
+                            <img src="./asset/images/image_body/img-primary.png" alt="people">
+                        </div>
+
+                        <div class="grid--item-content d-grid">
+                            <h3 class="heading-fourth heading heading--xxl fw-bold line-height-xxl p-relative">
+                                Adapts to your <span class="high-light high-light-secondary">unique</span> irregular cycle
+                                <span class="icon-text icon-txt-fourth-mb icon-txt-fourth-desktop p-absolute">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53" fill="none">
+                                        <g clip-path="url(#clip0_3_4294)">
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M19.706 13.6548C19.167 12.9141 18.6648 12.1436 18.1626 11.3731C18.0166 11.2167 17.8774 11.0609 17.7413 10.9089C17.4477 10.5807 17.1692 10.2693 16.8704 10.0033C16.6518 9.80859 16.128 9.61318 15.9809 9.73238C15.7601 9.91119 15.5437 10.3962 15.5849 10.6727C15.6845 11.3974 15.8448 12.1971 16.1521 12.8775C17.0982 15.0234 18.1178 17.1097 19.2044 19.2036C19.8322 20.43 20.644 21.5075 21.8301 22.2197C22.5054 22.6021 23.2001 22.7829 23.8623 22.2466C24.5245 21.7102 24.5288 20.9633 24.2582 20.2531C24.0179 19.5803 23.6369 18.9595 23.2192 18.3684C22.6347 17.5716 22.0486 16.7916 21.4625 16.0116C20.8765 15.2316 20.2904 14.4516 19.706 13.6548ZM34.9824 42.6709C35.3287 42.948 35.7421 43.2328 36.3179 42.8905C36.1969 42.6659 36.0763 42.4386 35.9547 42.2097L35.9543 42.209C35.4688 41.2942 34.9685 40.3519 34.3783 39.4427C32.7396 36.7425 31.0274 34.1019 29.3151 31.4613C29.0792 31.0948 28.7394 30.7504 28.393 30.4733C27.5663 29.9038 26.6443 29.9689 26.1097 30.5877C25.5752 31.2065 25.6748 31.9313 26.3415 32.7545C27.1662 33.6974 27.9844 34.7076 28.7723 35.6805C29.1976 36.2056 29.6189 36.7341 30.039 37.2612L30.0391 37.2613L30.0391 37.2613C30.8761 38.3114 31.7086 39.3559 32.5603 40.3574C33.1412 41.0745 33.8497 41.6881 34.5583 42.3018C34.7 42.4246 34.8418 42.5473 34.9824 42.6709ZM40.2734 15.9561C40.1278 16.1409 39.9838 16.3333 39.8388 16.5269C39.4456 17.0523 39.0451 17.5873 38.5834 18.0066L38.2573 18.3262C35.8217 20.7138 33.4146 23.0735 30.9182 25.392C30.507 25.787 29.9011 26.0919 29.3449 26.2326C28.6112 26.455 28.1632 25.8266 28.4661 25.1476C28.6392 24.7595 28.9097 24.4165 29.204 24.1781C32.6081 21.2351 36.0728 18.367 39.8103 15.8356C39.8839 15.776 39.9878 15.7538 40.0916 15.7317L40.2734 15.9561ZM20.3554 28.598C20.7543 28.2129 21.1533 27.8279 21.5623 27.4553C21.5016 27.3805 21.441 27.3057 21.3869 27.1636C21.2246 27.2641 21.0639 27.3478 20.9032 27.4314C20.7425 27.5152 20.5818 27.5988 20.4195 27.6993C18.9923 28.6074 17.5742 29.5081 16.1561 30.4088C14.7381 31.3095 13.3201 32.2102 11.8928 33.1183C11.6569 33.2784 11.4135 33.4291 11.17 33.5798C10.9265 33.7305 10.6831 33.8813 10.4471 34.0413C10.0792 34.3393 9.90616 34.7274 10.1356 35.1611C10.3954 35.6323 10.8585 35.7528 11.3174 35.5671C11.6355 35.4334 11.9904 35.2698 12.2847 35.0314C12.7397 34.6932 13.1986 34.3554 13.6588 34.0168C15.0831 32.9686 16.5186 31.9121 17.8811 30.8085C18.7598 30.1382 19.5576 29.3681 20.3554 28.598Z" fill="#1F94AA"/>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_3_4294">
+                                            <rect width="36" height="39" fill="white" transform="translate(0 22.6758) rotate(-39.0051)"/>
+                                          </clipPath>
+                                        </defs>
+                                      </svg>
+                                </span>
+                            </h3>
+
+                            <div class="sub-heading-fourth d-grid">
+                                <p class="txt-fourth sub-heading--md fw-medium lh-sub-heading-lg">Most ovulation kits have a set value or a threshold, making them likely to give a false read if your hormones fall outside the average range.</p>
+                                <p class="txt-fourth sub-heading--md fw-medium lh-sub-heading-lg">Every woman is unique, especially with a condition like PCOS or Thyroid which can influence hormone levels. Inito measures real values of your hormones to personalize results to the unique you.</p>
+                            </div>
+
+                            <a href="#" class="btn btn-secondary">Get the Inito kit</a>
+                        </div>
+                    </div>
+
+                    <div class="grid--row-secondary d-grid alt-center-md jfi-center-md rgap-seventh cgap-secondary-desktop grid-columns-desktop-2">
+                        <div class="grid--item-images item-order b-radius-24 b-radius-40 o-hidden">
+                            <img src="./asset/images/image_body/img-secondary.svg" alt="product">
+                        </div>
+
+                        <div class="grid--item-content d-grid">
+                            <h3 class="heading-fourth heading heading--xxl fw-bold line-height-xxl p-relative">
+                                Inito <span class="high-light high-light-secondary">tracks</span> everything so you don't have to
+                                <span class="icon-text icon-txt-secondary-mb icon-txt-secondary-desktop p-absolute">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="46" viewBox="0 0 48 46" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.1931 4.04875C20.4391 3.75943 19.669 3.72943 18.9074 3.91677C18.593 3.99379 18.3126 4.31658 18.4522 4.64466C18.9079 5.71686 18.2624 6.48817 17.774 7.26584C14.6671 12.213 10.8229 16.5446 6.65132 20.5929C5.12906 22.0705 3.55014 23.489 2.00574 24.9432C1.79619 25.1406 1.4992 25.2786 1.64547 25.7167C1.79133 26.1539 2.14886 25.9685 2.35919 26.1024C3.95554 27.1199 5.02765 26.0293 6.17667 25.2179C11.9879 21.1149 16.5783 15.882 20.2525 9.80409C20.9248 8.69189 21.484 7.52011 21.77 6.24383C21.9519 5.43061 21.9439 4.62997 21.1931 4.04875Z" fill="#1F94AA"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M29.1594 22.2427C29.2317 21.6297 29.0578 21.2741 28.4881 21.1776C27.9285 21.0827 27.5607 21.1893 27.2307 21.7388C26.5245 22.9142 25.3239 23.5576 24.1988 24.2418C20.2381 26.6521 16.1112 28.7592 12.017 30.9255C11.6948 31.0962 11.3533 31.2516 11.3284 31.7252C11.2973 32.3014 11.838 32.0564 12.0452 32.282C12.7278 33.0248 13.4792 32.6827 14.2047 32.3858C17.9713 30.8435 21.7789 29.3866 25.1994 27.1134C26.3215 26.3676 27.4201 25.5936 28.4407 24.706C28.8922 24.3131 28.8638 23.5773 29.5725 23.3378C29.8612 23.2405 30.0436 22.7119 29.9671 22.2684C29.9274 22.0379 29.9119 21.7588 29.6555 21.704C29.3546 21.6397 29.3635 21.9905 29.1594 22.2427Z" fill="#1F94AA"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M36.1037 36.4466C35.12 35.9515 34.3485 36.009 33.4435 36.3846C31.6999 37.1083 29.8058 37.1179 27.9427 37.1595C25.4801 37.2151 23.0243 37.1063 20.5766 36.7956C19.9565 36.7166 19.3189 36.7507 18.6909 36.7738C18.4518 36.7824 18.1581 36.8215 18.1642 37.2033C18.1687 37.5144 18.3607 37.5934 18.5997 37.7442C20.4631 38.9198 22.6103 38.7985 24.6504 39.0466C27.4316 39.3847 30.2392 39.4408 33.028 38.9736C34.0515 38.8019 35.0367 38.5094 35.9764 38.0687C36.3792 37.8795 36.721 37.6397 36.741 37.1217C36.7625 36.5537 36.3509 36.494 36.1037 36.4466Z" fill="#1F94AA"/>
+                                    </svg>
+                                </span>
+                            </h3>
+
+                            <div class="sub-heading-fourth d-grid">
+                                <p class="txt-fourth sub-heading--md fw-medium lh-sub-heading-lg">The Inito Fertility Monitor comes with a free easy-to-use App, so you can track your fertile days with ease and know exactly when you ovulate.</p>
+                                <ul class="txt-fourth-list sub-heading--md fw-medium lh-sub-heading-lg">
+                                    <li class="ls-none">Our App notifies you for everything:</li>
+                                    <li>Your fertility levels</li>
+                                    <li>When to test on the right days</li>
+                                    <li>When you've successfully ovulated</li>
+                                    <li>And when to roll into bed!</li>
+                                </ul>
+                            </div>
+
+                            <a href="#" class="btn btn-secondary">Get the Inito kit</a>
+                        </div>
+                    </div>
+
+                    <div class="grid--row-third d-grid alt-center-md jfi-center-md rgap-seventh cgap-secondary-desktop grid-columns-desktop-2">
+                        <div class="grid--item-images b-radius-24 b-radius-40 o-hidden">
+                            <img src="./asset/images/image_body/img-third.png" alt="graph">
+                        </div>
+
+                        <div class="grid--item-content d-grid">
+                            <h3 class="heading-fourth heading heading--xxl fw-bold line-height-xxl p-relative">
+                                Get charts and actual values of your <span class="high-light high-light-secondary">hormones</span>
+                                <span class="icon-text icon-txt-fifth-mb icon-txt-fifth-desktop p-absolute">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="51" viewBox="0 0 52 51" fill="none">
+                                        <g clip-path="url(#clip0_3_4307)">
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M40.2315 29.0729C41.0725 29.436 41.9345 29.7566 42.7965 30.0773C42.9812 30.1854 43.1637 30.287 43.3419 30.3864C43.7265 30.6006 44.0915 30.804 44.4167 31.037C44.6547 31.2075 44.9603 31.6756 44.8764 31.8453C44.7504 32.1 44.3248 32.4176 44.046 32.4382C43.3171 32.5002 42.5018 32.5195 41.7705 32.3691C39.4692 31.9176 37.2099 31.3812 34.9284 30.7811C33.594 30.438 32.3646 29.8828 31.4092 28.8822C30.8877 28.3074 30.5587 27.6693 30.9365 26.9055C31.3143 26.1416 32.042 25.9734 32.7943 26.0813C33.5035 26.1679 34.1928 26.4032 34.8612 26.681C35.767 27.0761 36.6567 27.4765 37.5464 27.8769C38.4361 28.2773 39.3258 28.6777 40.2315 29.0729ZM8.56829 20.5437C8.22187 20.2667 7.85318 19.926 8.06071 19.2891C8.30636 19.3578 8.55459 19.4256 8.80467 19.4939L8.80538 19.4941C9.80446 19.7668 10.8337 20.0479 11.8504 20.4239C14.8445 21.4294 17.7968 22.5197 20.749 23.6101C21.1584 23.7598 21.569 24.0156 21.9155 24.2926C22.6527 24.9741 22.7917 25.8879 22.3054 26.5453C21.8191 27.2027 21.0902 27.2647 20.1407 26.7951C19.0396 26.1977 17.8743 25.6215 16.7521 25.0665C16.1464 24.7669 15.5383 24.4721 14.9318 24.178L14.9317 24.178L14.9316 24.1779C13.7233 23.592 12.5215 23.0094 11.3573 22.3984C10.5301 21.9893 9.77585 21.4329 9.02151 20.8764C8.8706 20.7651 8.71976 20.6538 8.56829 20.5437ZM33.4682 9.51336C33.3199 9.69604 33.1638 9.87877 33.0068 10.0628C32.5806 10.5618 32.1467 11.07 31.8391 11.6125L31.5989 12.0009C29.8046 14.9015 28.0314 17.7682 26.3179 20.7129C26.0229 21.2008 25.8586 21.8589 25.8434 22.4324C25.7876 23.1971 26.4991 23.4961 27.095 23.0514C27.4356 22.7973 27.7108 22.4581 27.8787 22.1186C30.002 18.1511 32.039 14.1409 33.6875 9.93867C33.7295 9.8538 33.7283 9.74757 33.7271 9.64141L33.4682 9.51336ZM25.5106 31.722C25.7986 31.2482 26.0867 30.7744 26.3603 30.2936C26.4466 30.3363 26.5329 30.379 26.6834 30.4006C26.621 30.581 26.5746 30.7562 26.5283 30.9313C26.4819 31.1064 26.4357 31.2816 26.3732 31.462C25.8008 33.0539 25.2337 34.6351 24.6665 36.2164C24.0993 37.7977 23.5321 39.379 22.9597 40.9709C22.8554 41.2361 22.7618 41.5068 22.6683 41.7774C22.5748 42.0481 22.4812 42.3187 22.3768 42.584C22.167 43.0083 21.8264 43.2624 21.3529 43.1339C20.8361 42.9839 20.6168 42.5586 20.6972 42.0702C20.7578 41.7304 20.8394 41.3482 21.0073 41.0087C21.2373 40.4906 21.466 39.9687 21.6953 39.4454C22.405 37.8256 23.1204 36.1931 23.8976 34.6214C24.3586 33.6169 24.9346 32.6694 25.5106 31.722Z" fill="#1F94AA"/>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_3_4307">
+                                            <rect width="36" height="39" fill="white" transform="matrix(0.443307 -0.89637 -0.89637 -0.443307 35.7598 50.2792)"/>
+                                          </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                            </h3>
+
+                            <div class="sub-heading-fourth d-grid">
+                                <p class="txt-fourth sub-heading--md fw-medium lh-sub-heading-lg">Actual numerical values are necessary to know whether your PdG levels are sufficient enough to support a healthy pregnancy.</p>
+                                <p class="txt-fourth sub-heading--md fw-medium lh-sub-heading-lg">Studies show that Pdg levels lower than 7.9ng/ml in serum (around 10ug/ml PdG) 6-8 days after ovulation are associated with lower pregnancy outcomes.</p>
+                            </div>
+
+                            <a href="#" class="btn btn-secondary">Get the Inito kit</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!--SECTION FERTILITY LAB-->
+        <section class="mg-block-primary">
+            <div class="container container--bg-fifth d-grid alt-center-md jfi-start cgap-secondary-desktop grid-columns-desktop-2">
+                <div class="grid--fifth-primary d-grid">
+                    <h2 class="item--heading-fifth heading heading--xxl line-height-xxl fw-bold">Your own fertility lab at your <span class="high-light high-light-secondary">fingertips</span></h2>
+
+                    <p class="item-subheading-fifth sub-heading--md lh-sub-heading-lg fw-medium">Easy-to-read fertility diagnostic results directly on your iPhone, in just 5 minutes.</p>
+
+                    <a href="#" class="item--btn-fifth btn btn-secondary">Get the Inito kit</a>
+
+                    <span class="grid--item-note-fifth sub-heading--sm lh-sub-heading-md">* The Inito Fertility Monitor currently supports iPhone 7 and up. Android phones are not supported at the moment.</span>
+                </div>
+
+                <div class="grid--fifth-secondary d-grid grid-columns-desktop-2">
+                    <div class="grid--group-images d-grid rgap-third">
+                        <div class="grid--item-images-fifth">
+                            <img src="./asset/images/image_body/img-fourth.png" alt="Instructions step 1">
+                        </div>
+
+                        <div class="grid--item-content-fifth">
+                            <div class="step heading d-flex alt-center">
+                                <span class="icon-step fw-bold">1</span>
+                                <span class="txt-step">Dip the test strip in urine for 15 seconds.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid--group-images d-grid rgap-third">
+                        <div class="grid--item-images-fifth">
+                            <img src="./asset/images/image_body/img-fifth.png" alt="Instructions step 2">
+                        </div>
+
+                        <div class="grid--item-content-fifth">
+                            <div class="step heading d-flex alt-center">
+                                <span class="icon-step fw-bold">2</span>
+                                <span class="txt-step">Attach the Inito Fertility Monitor to your iPhone*.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid--group-images grid--order d-grid rgap-third">
+                        <div class="grid--item-images-fifth">
+                            <img src="./asset/images/image_body/img-sixth.png" alt="Instructions step 3">
+                        </div>
+
+                        <div class="grid--item-content-fifth">
+                            <div class="step heading d-flex alt-center">
+                                <span class="icon-step fw-bold">3</span>
+                                <span class="txt-step">Insert the test strip into the Inito Fertility Monitor.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid--group-images d-grid rgap-third">
+                        <div class="grid--item-images-fifth">
+                            <img src="./asset/images/image_body/img-seventh.png" alt="Instructions step 4">
+                        </div>
+
+                        <div class="grid--item-content-fifth">
+                            <div class="step heading d-flex alt-center">
+                                <span class="icon-step fw-bold">4</span>
+                                <span class="txt-step">Get personalized results on our App in 5 minutes.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--SECTION THING YOU NEED TO KNOW-->
+        <section class="mg-block-primary mg-inline-primary">
+            <div class="container container--bg-sixth bg-images b-radius-40">
+                <div class="grid--bg-sixth d-flex f-wrap  alt-center jc-space-between">
+                    <div class="grid--item-rate d-flex f-direction-col">
+                        <img src="./asset/images/image_body/five-star.svg" alt="Five Star">
+                        <span class="item-name-sixth heading--sm fw-semibold line-height-sm">Krista Wilhelm</span>
+                        <span class="item-date">May 22, 2021</span>
+                    </div>
+
+                    <div class="grid--item-content-sixth d-flex f-direction-col p-relative">
+                        <h2 class="item-heading-sixth heading fw-bold alt-start">Inito tells you all you need to monitor your fertility</h2>
+                        <p class="item-subheading-sixth sub-heading--md fw-medium lh-sub-heading-lg alt-start">I made comparisons with other brands to allow me to choose the better product better. Inito tests all three of the hormones - LH, Estrogen, and Progesterone all in one stick. How can other products ignore measuring progesterone?
+                            It's a no brainer! You guys are tops. I highly recommend Inito</p>
+                        <span class="icon-text icon-txt-seventh-mb icon-txt-seventh-desktop d-none p-absolute">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="108" height="106" viewBox="0 0 108 106" fill="none">
+                                <path d="M60.7403 46.4795C62.6907 43.2877 68.4946 42.8283 71.2971 45.2622C72.1681 46.0464 72.7645 47.0332 72.9919 48.0664C73.4276 50.3442 70.6564 52.8843 67.7789 53.1748C66.4418 53.3013 65.0255 52.9793 63.7879 52.2675C62.5504 51.5557 61.5738 50.5014 61.0362 49.2968C60.7854 48.3551 60.6857 47.4058 60.7403 46.4795Z" fill="#1F94AA"/>
+                                <path d="M58.6391 62.575C59.1374 62.7884 59.5937 63.0914 59.9763 63.4627C60.3588 63.8339 60.6582 64.2646 60.8536 64.7244C61.049 65.1843 61.1357 65.6622 61.1075 66.1249C61.0794 66.5875 60.937 67.0237 60.6905 67.4028C59.9861 68.6223 58.7397 69.4763 57.2105 69.7873C55.6813 70.0982 53.987 69.8422 52.4801 69.0725C49.8295 67.6521 48.7477 65.6001 49.7591 63.7376C50.9879 61.4514 55.3386 60.8699 58.6391 62.575Z" fill="#1F94AA"/>
+                                <path d="M40.5488 49.7792C41.9123 47.2686 46.1004 46.3987 48.9093 47.9039C49.8716 48.4303 50.6232 49.2455 51.0055 50.1776C51.3879 51.1098 51.3711 52.0859 50.9587 52.9001C49.8358 54.9677 44.8142 56.0794 42.4286 54.7586C41.4891 54.2141 40.7683 53.3909 40.4177 52.4622C40.0671 51.5335 40.1141 50.5718 40.5488 49.7792Z" fill="#1F94AA"/>
+                                <path d="M75.8988 31.6167C76.9459 29.6886 80.7032 28.7891 82.8271 29.9803C84.5283 30.8919 85.4717 33.8336 84.6162 35.4089C83.7607 36.9842 79.873 37.5596 77.7505 36.5069C77.2738 36.2596 76.8446 35.9331 76.4898 35.5479C76.135 35.1627 75.8622 34.727 75.6884 34.268C75.5146 33.8091 75.4437 33.3367 75.4799 32.8805C75.5161 32.4244 75.6587 31.9941 75.8988 31.6167Z" fill="#1F94AA"/>
+                                <path d="M72.0897 66.2343C71.4212 65.3745 70.8732 64.4537 70.4607 63.4971C70.2822 62.8966 70.362 62.2917 70.6832 61.8098C71.0044 61.328 71.542 61.0068 72.1828 60.9139C73.7093 60.5059 75.3242 60.3019 76.9812 60.3075C77.7754 60.315 78.583 60.5889 79.2489 61.0767C79.9148 61.5646 80.3922 62.2319 80.5893 62.9507C80.8357 63.6553 80.8101 64.379 80.5171 64.9959C80.224 65.6129 79.682 66.0841 78.9851 66.3279C77.9997 66.8249 76.8561 67.0762 75.6541 67.0599C74.4522 67.0436 73.2284 66.7601 72.0897 66.2343Z" fill="#1F94AA"/>
+                                <path d="M60.8013 85.9151C58.5463 84.7067 57.7473 82.9333 58.6918 81.4057C59.7853 79.6507 63.4386 79.0133 65.5724 80.2097C66.431 80.7718 67.0735 81.572 67.3762 82.4559C67.6789 83.3398 67.6204 84.2449 67.2119 84.9968C66.6103 85.8938 65.6061 86.4907 64.4105 86.662C63.215 86.8332 61.9212 86.5655 60.8013 85.9151Z" fill="#1F94AA"/>
+                                <path d="M85.8034 52.4301C83.8254 51.3701 83.0733 49.6748 83.9752 48.2727C85.0974 46.512 88.8698 46.0549 91.2168 47.3761C91.642 47.5823 92.0286 47.8591 92.3528 48.1896C92.6769 48.52 92.9318 48.8971 93.1017 49.2977C93.2716 49.6983 93.353 50.1139 93.3409 50.5189C93.3287 50.924 93.2233 51.31 93.0311 51.6532C92.0801 53.3573 88.2518 53.7527 85.8034 52.4301Z" fill="#1F94AA"/>
+                                <path d="M24.2313 56.0559C25.4139 54.1369 29.4797 53.4451 31.701 54.7626C32.0813 54.9786 32.4209 55.2547 32.7002 55.575C32.9795 55.8954 33.1928 56.2534 33.3278 56.6284C33.4628 57.0033 33.5168 57.3877 33.4866 57.7591C33.4564 58.1306 33.3426 58.4816 33.1519 58.7919C32.0578 60.6419 27.8233 61.3386 25.6426 60.064C25.2507 59.8608 24.8991 59.5907 24.6111 59.2716C24.3231 58.9524 24.1052 58.5915 23.9718 58.2127C23.8384 57.8338 23.7926 57.4457 23.8373 57.0739C23.882 56.7021 24.0163 56.3551 24.2313 56.0559Z" fill="#1F94AA"/>
+                                <path d="M55.7354 39.3798C55.4551 38.8377 54.499 37.7533 54.4945 36.7976C54.5646 36.3214 54.7579 35.8823 55.0598 35.5137C55.3617 35.1451 55.7644 34.8567 56.2372 34.6703C57.7167 34.1651 59.3646 34.0093 61.0424 34.2158C61.6403 34.3923 62.2065 34.6827 62.699 35.0658C63.1915 35.4489 63.5979 35.9149 63.888 36.4292C63.9936 36.9244 63.979 37.4182 63.8454 37.8756C63.7117 38.333 63.4623 38.7428 63.1146 39.076C61.6854 40.5557 58.2737 40.7718 55.7354 39.3798Z" fill="#1F94AA"/>
+                                <path d="M48.5494 72.9952C50.4088 73.9916 51.2089 75.5749 50.4826 76.9123C49.6717 78.4055 45.7176 79.2207 43.9749 78.2445C43.2701 77.8293 42.7157 77.2221 42.4106 76.531C42.1055 75.8399 42.0694 75.1097 42.3088 74.4705C42.8245 73.5209 43.7563 72.8401 44.9151 72.5661C46.074 72.2922 47.3732 72.4456 48.5494 72.9952Z" fill="#1F94AA"/>
+                                <path d="M27.4527 69.8702C29.3121 70.8666 30.1122 72.4499 29.3859 73.7873C28.575 75.2805 24.6209 76.0957 22.8782 75.1195C22.1734 74.7043 21.619 74.0971 21.3139 73.406C21.0088 72.7149 20.9727 71.9847 21.2121 71.3455C21.7278 70.3959 22.6596 69.7151 23.8185 69.4411C24.9773 69.1672 26.2765 69.3206 27.4527 69.8702Z" fill="#1F94AA"/>
+                                <path d="M69.6598 25.6579C68.904 25.2117 68.3293 24.5407 68.0583 23.7879C67.7872 23.0351 67.8413 22.2603 68.2089 21.6286C69.2995 19.8085 72.6634 19.069 74.4688 20.2589C75.213 20.8376 75.7247 21.6193 75.9 22.4451C76.0753 23.2709 75.9009 24.0789 75.4124 24.7049C74.8123 25.4468 73.9178 25.9445 72.8737 26.1175C71.8296 26.2905 70.6972 26.1285 69.6598 25.6579Z" fill="#1F94AA"/>
+                                <path d="M75.8234 89.2417C74.1124 88.3248 73.495 86.1933 74.4579 84.5378C75.2822 83.02 77.6675 82.8364 79.8983 84.0424C80.2537 84.2282 80.5738 84.4723 80.839 84.7598C81.1043 85.0472 81.3091 85.372 81.4411 85.7143C81.573 86.0566 81.6293 86.4093 81.6065 86.7507C81.5836 87.0922 81.4822 87.4153 81.3083 87.7003C80.4171 89.3413 77.5587 90.161 75.8234 89.2417Z" fill="#1F94AA"/>
+                                <path d="M38.4027 42.0935C40.3808 43.1535 41.1221 44.61 40.4676 45.9328C39.9674 46.6848 39.1282 47.1852 38.1281 47.3277C37.128 47.4701 36.0459 47.2435 35.1117 46.6959C33.3265 45.6334 32.3215 43.2518 33.1496 42.0325C33.9778 40.8133 36.1116 40.834 38.4027 42.0935Z" fill="#1F94AA"/>
+                                <path d="M38.7807 81.8108C40.7588 82.8708 41.5 84.3273 40.8455 85.6501C40.3454 86.4021 39.5061 86.9024 38.506 87.0449C37.506 87.1874 36.4239 86.9608 35.4896 86.4132C33.7044 85.3507 32.6994 82.9691 33.5276 81.7498C34.3557 80.5306 36.4896 80.5513 38.7807 81.8108Z" fill="#1F94AA"/>
+                                <path d="M73.8998 72.5874C74.6732 73.0208 75.2743 73.6838 75.578 74.4384C75.8817 75.193 75.8646 75.9812 75.5302 76.6388C74.7059 78.1567 71.4672 78.5715 69.3828 77.4015C68.7194 77.0574 68.1955 76.5095 67.9249 75.8767C67.6542 75.2438 67.6586 74.5771 67.9371 74.0211C68.6738 72.594 72.3737 71.7061 73.8998 72.5874Z" fill="#1F94AA"/>
+                                <path d="M48.059 25.7652C48.8324 26.1985 49.4335 26.8615 49.7372 27.6161C50.0409 28.3708 50.0238 29.1589 49.6894 29.8166C48.8651 31.3344 45.6264 31.7492 43.542 30.5793C42.8786 30.2352 42.3547 29.6873 42.084 29.0544C41.8134 28.4215 41.8178 27.7548 42.0963 27.1988C42.833 25.7717 46.5329 24.8838 48.059 25.7652Z" fill="#1F94AA"/>
+                                <path d="M12.8204 53.933C13.1649 54.0796 13.4828 54.2844 13.7544 54.5347C14.0261 54.7849 14.2458 55.0754 14.4 55.3882C14.5542 55.701 14.6397 56.0296 14.6513 56.3537C14.6628 56.6778 14.6001 56.9905 14.467 57.2728C14.0498 58.1456 13.2582 58.7959 12.2472 59.0965C11.2361 59.3971 10.0783 59.3264 9.00035 58.8981C8.61226 58.7696 8.24783 58.5691 7.93303 58.3108C7.61822 58.0524 7.3608 57.7427 7.17913 57.4035C6.99745 57.0644 6.896 56.7042 6.882 56.3488C6.868 55.9933 6.9418 55.6513 7.09814 55.3471C7.78735 53.937 11.0801 53.1169 12.8204 53.933Z" fill="#1F94AA"/>
+                                <path d="M63.3919 94.548C63.7995 93.9374 64.4575 93.5097 65.2502 93.3399C66.0429 93.17 66.9198 93.2689 67.7269 93.6192C68.4319 94.0381 68.9666 94.6669 69.2166 95.3709C69.4666 96.075 69.412 96.7984 69.0646 97.3866C68.8833 97.736 68.6211 98.039 68.2929 98.2784C67.9647 98.5177 67.577 98.6887 67.1519 98.7815C66.7268 98.8744 66.2726 98.8873 65.8153 98.8195C65.358 98.7517 64.9065 98.6046 64.4867 98.3865C63.8328 97.9058 63.3613 97.2515 63.1599 96.5455C62.9585 95.8394 63.041 95.1296 63.3919 94.548Z" fill="#1F94AA"/>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--QUESTION ANSWERED-->
+        <section class="mg-block-primary mg-inline-primary">
+            <div class="container container--bg-seventh">
+                <div class="grid--bg-seventh d-flex f-wrap alt-center jc-space-between">
+                    <div class="grid--item-title">
+                        <h2 class="heading heading--xxl line-height-xxl fw-bold p-relative">
+                            Your <span class="high-light high-light-secondary">top</span> questions, answered
+                            <span class="icon-text icon-txt-sixth-mb icon-txt-sixth-desktop p-absolute">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="58" height="57" viewBox="0 0 58 57" fill="none">
+                                    <g clip-path="url(#clip0_3_4487)">
+                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M20.676 12.3438C19.9023 12.3077 19.1922 12.5125 18.5553 12.9127C18.2923 13.0775 18.1343 13.456 18.3602 13.7126C19.0984 14.5513 18.7431 15.4481 18.5329 16.3034C17.1955 21.7438 15.0013 26.8461 12.4237 31.7892C11.4832 33.5934 10.4733 35.3607 9.50556 37.1501C9.37431 37.3931 9.1455 37.6082 9.41074 37.963C9.6753 38.317 9.94492 38.0405 10.1768 38.099C11.9368 38.5442 12.5842 37.2281 13.3857 36.1431C17.4396 30.6559 20.0414 24.5081 21.5545 17.8672C21.8313 16.6519 21.9872 15.4166 21.8629 14.1684C21.7834 13.3732 21.5347 12.6467 20.676 12.3438Z" fill="#1F94AA"/>
+                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M33.4129 26.5069C33.2939 25.9271 33.0284 25.6557 32.4807 25.7396C31.9426 25.8219 31.6399 26.0298 31.505 26.6296C31.2165 27.9125 30.3173 28.8602 29.4992 29.8222C26.6198 33.2105 23.4978 36.3728 20.4233 39.5791C20.1814 39.8316 19.9174 40.0761 20.0375 40.5148C20.1829 41.0487 20.6012 40.6627 20.8579 40.8056C21.7032 41.2761 22.2842 40.7382 22.8552 40.2492C25.8195 37.7097 28.8469 35.2356 31.2758 32.135C32.0725 31.1177 32.8394 30.082 33.5011 28.9662C33.7937 28.4725 33.5461 27.8111 34.1191 27.3794C34.3525 27.2038 34.3593 26.6676 34.1559 26.2869C34.0503 26.089 33.9521 25.8395 33.7022 25.867C33.4088 25.8991 33.5226 26.2158 33.4129 26.5069Z" fill="#1F94AA"/>
+                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M44.0166 37.3449C42.9717 37.1908 42.2867 37.4757 41.5759 38.0904C40.2066 39.2748 38.4851 39.8545 36.8015 40.4539C34.5763 41.2468 32.3077 41.888 29.9855 42.343C29.3972 42.458 28.827 42.6812 28.2622 42.8916C28.0471 42.9715 27.7915 43.0956 27.9121 43.4414C28.01 43.7232 28.2086 43.7373 28.4716 43.8025C30.5225 44.3112 32.4408 43.5535 34.3729 43.1644C37.0069 42.6339 39.5799 41.8387 41.9781 40.5727C42.8581 40.1079 43.6669 39.5446 44.3896 38.8601C44.6993 38.5665 44.9382 38.2451 44.8003 37.7675C44.6486 37.2439 44.2559 37.3136 44.0166 37.3449Z" fill="#1F94AA"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_3_4487">
+                                        <rect width="46.0331" height="44.1151" fill="white" transform="translate(0.160156 15.0461) rotate(-18.319)"/>
+                                      </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                        </h2>
+                    </div>
+
+                    <div id="myHighlight" class="grid--item-list-collapsible d-grid">
+                        <div class="btn--list-collapsible-highlight">
+                            <button type="button" class="button collapsible heading heading--lg fw-bold d-flex jc-space-between alt-center">
+                                <span class="btn--name">What results does Inito give?</span>
+                            </button>
+
+                            <div class="item-content-seventh">
+                                <p class="item-suv-heading-content sub-heading--md fw-medium lh-sub-heading-lg">Inito gives results as: High Fertility, Peak Fertility or Ovulation Confirmed. Inito also shows you the charts and actual values of all 3 hormones.</p>
+                            </div>
+                        </div>
+
+                        <div class="btn--list-collapsible-highlight">
+                            <button type="button" class="button collapsible heading heading--lg fw-bold d-flex jc-space-between alt-center">
+                                <span class="btn--name">Do I need to use a test strip for each hormone?</span>
+                            </button>
+
+                            <div class="item-content-seventh">
+                                <p class="item-suv-heading-content sub-heading--md fw-medium lh-sub-heading-lg">Inito gives results as: High Fertility, Peak Fertility or Ovulation Confirmed. Inito also shows you the charts and actual values of all 3 hormones.</p>
+                            </div>
+                        </div>
+
+                        <div class="btn--list-collapsible-highlight">
+                            <button type="button" class="button collapsible heading heading--lg fw-bold d-flex jc-space-between alt-center">
+                                <span class="btn--name"> How many test strips are required per cycle?</span>
+                            </button>
+
+                            <div class="item-content-seventh">
+                                <p class="item-suv-heading-content sub-heading--md fw-medium lh-sub-heading-lg">Inito gives results as: High Fertility, Peak Fertility or Ovulation Confirmed. Inito also shows you the charts and actual values of all 3 hormones.</p>
+                            </div>
+                        </div>
+
+                        <div class="btn--list-collapsible-highlight">
+                            <button type="button" class="button collapsible heading heading--lg fw-bold d-flex jc-space-between alt-center">
+                                <span class="btn--name">Will inito work if I have pcos?</span>
+                            </button>
+
+                            <div class="item-content-seventh">
+                                <p class="item-suv-heading-content sub-heading--md fw-medium lh-sub-heading-lg">Inito gives results as: High Fertility, Peak Fertility or Ovulation Confirmed. Inito also shows you the charts and actual values of all 3 hormones.</p>
+                            </div>
+                        </div>
+
+                        <div class="btn--list-collapsible-highlight">
+                            <button type="button" class="button collapsible heading heading--lg fw-bold d-flex jc-space-between alt-center">
+                                <span class="btn--name">Do medications affect the results?</span>
+                            </button>
+
+                            <div class="item-content-seventh">
+                                <p class="item-suv-heading-content sub-heading--md fw-medium lh-sub-heading-lg">Inito gives results as: High Fertility, Peak Fertility or Ovulation Confirmed. Inito also shows you the charts and actual values of all 3 hormones.</p>
+                            </div>
+                        </div>
+
+                        <div class="btn--list-collapsible-highlight">
+                            <button type="button" class="button collapsible heading heading--lg fw-bold d-flex jc-space-between alt-center">
+                                <span class="btn--name">How accurate is Inito?</span>
+                            </button>
+
+                            <div class="item-content-seventh">
+                                <p class="item-suv-heading-content sub-heading--md fw-medium lh-sub-heading-lg">Inito gives results as: High Fertility, Peak Fertility or Ovulation Confirmed. Inito also shows you the charts and actual values of all 3 hormones.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION FOOTER -->
+        <section class="section--footer">
+            <div class="container container--footer">
+                <div class="grid--row-footer">
+                    <div class="grid--item-top d-grid jc-space-between alt-center">
+                        <!-- <div class="footer--advantage d-grid"> -->
+                        <div class="advantage-info d-flex alt-center">
+                            <img src="./asset/images/footer/advantage-1.svg" alt="Advantage">
+                            <span class="title-advantage heading--sm line-height-sm fw-semibold">TRUSTED BY 20,000+ COUPLES</span>
+                        </div>
+
+                        <div class="advantage-info d-flex alt-center">
+                            <img src="./asset/images/footer/advantage-2.svg" alt="Advantage">
+                            <span class="title-advantage heading--sm line-height-sm fw-semibold">FREE US SHIPPING</span>
+                        </div>
+
+                        <div class="advantage-info d-flex alt-center">
+                            <img src="./asset/images/footer/advantage-3.svg" alt="Advantage">
+                            <span class="title-advantage heading--sm line-height-sm fw-semibold">FDA-REGISTERED (HSA/FSA ELIGIBLE)</span>
+                        </div>
+                        <!-- </div> -->
+
+                        <div class="footer--social-desktop">
+                            <a href="#" title="Facebook">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                                    <path d="M12.7367 30.3185V17.8057H9.33301V13.3005H12.7367V9.45252C12.7367 6.42871 14.7473 3.65186 19.3801 3.65186C21.2558 3.65186 22.6429 3.82666 22.6429 3.82666L22.5335 8.03375C22.5335 8.03375 21.119 8.02036 19.5754 8.02036C17.9047 8.02036 17.637 8.76876 17.637 10.0109V13.3005H22.6663L22.4475 17.8057H17.637V30.3185H12.7367Z" fill="white"/>
+                                </svg>
+                            </a>
+
+                            <a href="#" title="Youtube">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                                    <path d="M25.354 5.66357H6.64599C2.97551 5.66357 0 8.63908 0 12.3096V21.6616C0 25.3321 2.97551 28.3076 6.64599 28.3076H25.354C29.0245 28.3076 32 25.3321 32 21.6616V12.3096C32 8.63908 29.0245 5.66357 25.354 5.66357ZM20.8594 17.4406L12.109 21.614C11.8759 21.7252 11.6065 21.5552 11.6065 21.2969V12.6893C11.6065 12.4273 11.8829 12.2575 12.1166 12.3759L20.8669 16.8102C21.1271 16.942 21.1226 17.3151 20.8594 17.4406Z" fill="white"/>
+                                </svg>
+                            </a>
+
+                            <a href="#" title="Linkedin">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                                    <path d="M28.267 3.65186H3.73366C3.14366 3.65186 2.66699 4.12852 2.66699 4.71852V29.2519C2.66699 29.8419 3.14366 30.3185 3.73366 30.3185H28.267C28.857 30.3185 29.3337 29.8419 29.3337 29.2519V4.71852C29.3337 4.12852 28.857 3.65186 28.267 3.65186ZM10.577 26.3752H6.62033V13.6485H10.577V26.3752ZM8.60033 11.9085C8.14675 11.9085 7.70335 11.774 7.32622 11.522C6.94909 11.27 6.65514 10.9119 6.48157 10.4928C6.30798 10.0738 6.26257 9.61264 6.35106 9.16778C6.43955 8.72292 6.65797 8.31428 6.9787 7.99356C7.29942 7.67283 7.70806 7.45442 8.15291 7.36592C8.59778 7.27743 9.0589 7.32284 9.47795 7.49643C9.89699 7.67 10.2552 7.96395 10.5072 8.34108C10.7592 8.71822 10.8937 9.16161 10.8937 9.61519C10.8903 10.8819 9.86366 11.9085 8.60033 11.9085ZM25.3903 26.3752H21.437V20.1852C21.437 18.7085 21.4103 16.8119 19.3803 16.8119C17.3237 16.8119 17.007 18.4185 17.007 20.0785V26.3752H13.057V13.6485H16.8503V15.3885H16.9037C17.4303 14.3885 18.7203 13.3319 20.647 13.3319C24.6537 13.3319 25.3903 15.9685 25.3903 19.3952V26.3752Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="grid--item-center d-grid">
+                        <div class="item--logo-footer d-flex jc-space-between">
+                            <a href="index.html" title="Inito">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="105" height="41" viewBox="0 0 105 41" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.06348 37.3238H6.29712V16.2505H1.06348V37.3238Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.68089 2.98535C1.64794 2.98535 0 4.63362 0 6.66657C0 8.69951 1.64794 10.3475 3.68089 10.3475C5.71383 10.3475 7.36178 8.69951 7.36178 6.66657C7.36178 4.63362 5.71383 2.98535 3.68089 2.98535Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8867 15.8105C17.9553 15.8105 13.1299 20.636 13.1299 26.5673V37.3241H18.3635V26.5673C18.3635 23.522 20.8413 21.0442 23.8867 21.0442C26.932 21.0442 29.4098 23.522 29.4098 26.5673V37.3241H34.6434V26.5673C34.6434 20.636 29.818 15.8105 23.8867 15.8105Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M58.7756 9.26855H53.542V27.6848C53.542 32.9999 57.866 37.3242 63.1811 37.3242H67.3902V32.0905H63.1811C60.752 32.0905 58.7756 30.1142 58.7756 27.6848V21.4845H65.7547V16.2509H58.7756V9.26855Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M84.4512 32.0986C81.4932 33.1829 78.2042 31.6583 77.1198 28.7C76.0355 25.7417 77.5601 22.453 80.5184 21.3686C83.4767 20.2843 86.7658 21.8086 87.8501 24.7672C88.9345 27.7256 87.4095 31.0143 84.4512 32.0986ZM104.581 18.6344C103.881 16.7248 101.766 15.7441 99.8564 16.4444C98.8195 16.8242 98.06 17.6233 97.691 18.5785L97.689 18.5732C97.0087 20.333 94.1939 22.856 90.1856 18.9105L90.1873 18.9154C87.2551 16.0356 82.8157 14.9208 78.7069 16.4268C73.0238 18.5101 70.095 24.8281 72.178 30.5112C74.2609 36.1946 80.5793 39.1235 86.2627 37.0405C90.3711 35.5345 93.0386 31.815 93.4154 27.7223L93.4174 27.7272C93.9264 22.1259 97.7047 22.2322 99.3615 23.1353L99.3595 23.1304C100.258 23.6211 101.354 23.7395 102.391 23.3597C104.301 22.6597 105.281 20.544 104.581 18.6344Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M41.4756 37.3238H46.7092V16.2505H41.4756V37.3238Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M44.092 2.98535C42.0591 2.98535 40.4111 4.63362 40.4111 6.66657C40.4111 8.69951 42.0591 10.3475 44.092 10.3475C46.125 10.3475 47.7729 8.69951 47.7729 6.66657C47.7729 4.63362 46.125 2.98535 44.092 2.98535Z" fill="white"/>
+                                </svg>
+                            </a>
+
+                            <!-- Social Mobile -->
+                            <div class="footer--social-mb">
+                                <a href="#" title="Facebook">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                                        <path d="M12.7367 30.3185V17.8057H9.33301V13.3005H12.7367V9.45252C12.7367 6.42871 14.7473 3.65186 19.3801 3.65186C21.2558 3.65186 22.6429 3.82666 22.6429 3.82666L22.5335 8.03375C22.5335 8.03375 21.119 8.02036 19.5754 8.02036C17.9047 8.02036 17.637 8.76876 17.637 10.0109V13.3005H22.6663L22.4475 17.8057H17.637V30.3185H12.7367Z" fill="white"/>
+                                    </svg>
+                                </a>
+
+                                <a href="#" title="Youtube">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                                        <path d="M25.354 5.66357H6.64599C2.97551 5.66357 0 8.63908 0 12.3096V21.6616C0 25.3321 2.97551 28.3076 6.64599 28.3076H25.354C29.0245 28.3076 32 25.3321 32 21.6616V12.3096C32 8.63908 29.0245 5.66357 25.354 5.66357ZM20.8594 17.4406L12.109 21.614C11.8759 21.7252 11.6065 21.5552 11.6065 21.2969V12.6893C11.6065 12.4273 11.8829 12.2575 12.1166 12.3759L20.8669 16.8102C21.1271 16.942 21.1226 17.3151 20.8594 17.4406Z" fill="white"/>
+                                    </svg>
+                                </a>
+
+                                <a href="#" title="Linkedin">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                                        <path d="M28.267 3.65186H3.73366C3.14366 3.65186 2.66699 4.12852 2.66699 4.71852V29.2519C2.66699 29.8419 3.14366 30.3185 3.73366 30.3185H28.267C28.857 30.3185 29.3337 29.8419 29.3337 29.2519V4.71852C29.3337 4.12852 28.857 3.65186 28.267 3.65186ZM10.577 26.3752H6.62033V13.6485H10.577V26.3752ZM8.60033 11.9085C8.14675 11.9085 7.70335 11.774 7.32622 11.522C6.94909 11.27 6.65514 10.9119 6.48157 10.4928C6.30798 10.0738 6.26257 9.61264 6.35106 9.16778C6.43955 8.72292 6.65797 8.31428 6.9787 7.99356C7.29942 7.67283 7.70806 7.45442 8.15291 7.36592C8.59778 7.27743 9.0589 7.32284 9.47795 7.49643C9.89699 7.67 10.2552 7.96395 10.5072 8.34108C10.7592 8.71822 10.8937 9.16161 10.8937 9.61519C10.8903 10.8819 9.86366 11.9085 8.60033 11.9085ZM25.3903 26.3752H21.437V20.1852C21.437 18.7085 21.4103 16.8119 19.3803 16.8119C17.3237 16.8119 17.007 18.4185 17.007 20.0785V26.3752H13.057V13.6485H16.8503V15.3885H16.9037C17.4303 14.3885 18.7203 13.3319 20.647 13.3319C24.6537 13.3319 25.3903 15.9685 25.3903 19.3952V26.3752Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Nav list Mobile -->
+                        <div class="list-menu-footer mg-8-mb d-flex f-direction-col">
+                            <button type="button" class="button menu--collapsible d-flex jc-space-between">
+                                <span class="link-menu-parent heading--md fw-bold">Company</span>
+
+                                <span class="menu--dropdown-footer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                        <path d="M13 6.5L8 11.5L3 6.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                            </button>
+
+                            <div class="link-menu-footer d-grid heading--md">
+                                <a href="#" class="link-menu-children link-menu-pd-24">About</a>
+
+                                <a href="#" class="link-menu-children">Careers</a>
+
+                                <a href="#" class="link-menu-children">Blog</a>
+
+                                <a href="#" class="link-menu-children">Contacts</a>
+                            </div>
+                        </div>
+
+                        <div class="list-menu-footer d-flex f-direction-col heading--md">
+                            <button type="button" class="button menu--collapsible d-flex jc-space-between">
+                                <span class="link-menu-parent heading--md fw-bold">Support</span>
+
+                                <span class="menu--dropdown-footer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                        <path d="M13 6.5L8 11.5L3 6.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                            </button>
+
+                            <div class="link-menu-footer d-grid heading--md">
+                                <a href="#" class="link-menu-children link-menu-pd-24">FAQ</a>
+
+                                <a href="#" class="link-menu-children">Terms</a>
+
+                                <a href="#" class="link-menu-children">Privacy Policy</a>
+
+                                <a href="#" class="link-menu-children">Returns & Warranty</a>
+                            </div>
+                        </div>
+
+                        <div class="list-menu-footer d-flex f-direction-col heading--md">
+                            <button type="button" class="button menu--collapsible d-flex jc-space-between">
+                                <span class="link-menu-parent heading--md fw-bold">Get in touch</span>
+
+                                <span class="menu--dropdown-footer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                        <path d="M13 6.5L8 11.5L3 6.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                            </button>
+
+                            <div class="link-menu-footer d-grid heading--md">
+                                <a href="#" class="link-menu-children link-menu-pd-24">+1 815-369-0989</a>
+
+                                <a href="#" class="link-menu-children">help@inito.com</a>
+
+                                <a href="#" class="link-menu-children">355 Bryant Street, Unit 403, San Francisco CA 94107</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="grid--item-bottom d-grid">
+                        <p class="item-footer-content">† Inito is a medical device registered with the FDA and the return policy is to allow flexibility to the consumer while ensuring that products safe and effective for us.</p>
+                        <p class="item-footer-content">The following policy applies for purchases made through inito.com or the Inito App. If you purchased your product from Amazon or another authorized retailer, please speak with a representative from the original place of purchase
+                            as Inito must adhere to their policies and procedures. Products purchased through an unauthorized reseller are not eligible for any refund, cancellation, or replacement.</p>
+                        <p class="item-footer-content">In order to be eligible for a refund, cancellation, or replacement from purchases made on inito.com, customers must provide proof of purchase. For prompt service, please email our Customer Care Team and provide your order number
+                            for any request for the following:</p>
+                        <div class="item-footer-content">
+                            <p>If your order has not shipped, you are eligible for a 100% refund of your inito.com order.</p>
+                            <ul class="list-content">
+                                <li> Orders once shipped, are not eligible for any return, refunds or exchange.</li>
+                                <li> Damaged or defective products are covered by our 6-month limited warranty applicable from the from the date of purchase. During the warranty period, Inito will either repair or replace, at its option, any defective Product
+                                    or part at no charge to you.</li>
+                            </ul>
+                        </div>
+                        <p class="item-footer-content">© Inito Inc. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <script src="./asset/javascript/library.js"></script>
+
 </body>
 
 </html>

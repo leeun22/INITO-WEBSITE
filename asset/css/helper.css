@@ -229,10 +229,18 @@
 }
 
 
-/* ====LIST-STYLE:NONE==== */
+/* ====LIST-STYLE==== */
 
 .ls-none {
     list-style: none;
+}
+
+.ls-inside {
+    list-style: inside;
+}
+
+.ls-square {
+    list-style: square;
 }
 
 
@@ -315,6 +323,9 @@
     .d-none-xs {
         display: none;
     }
+    .mw-xsmall-100 {
+        max-width: 100%;
+    }
 }
 
 
@@ -335,6 +346,12 @@
     }
     .jc-end-md {
         justify-content: flex-end;
+    }
+    .alt-center-md {
+        align-items: center;
+    }
+    .jfi-center-md {
+        justify-items: center;
     }
 }
 
@@ -391,3 +408,23 @@
         display: none;
     }
 }
+
+
+/* ****GRID TEMPLATE COLUMN*** */
+
+
+/* .grid-columns-desktop-6 {
+    grid-template-columns: repeat(6, 1fr);
+}
+.grid-columns-desktop-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+.grid-columns-desktop-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+.grid-columns-desktop-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-columns-desktop-2 {
+    grid-template-columns: repeat(2, 1fr);
+} */
