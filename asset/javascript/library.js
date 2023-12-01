@@ -1,12 +1,12 @@
 // ====NAV BAR MENU MOBILE====
 function openNav() {
     const headerNav = document.getElementById("mySidenav");
-    headerNav.classList.add('active');
+    headerNav.classList.add('activeMenu');
 }
 
 function closeNav() {
     const headerNav = document.getElementById("mySidenav");
-    headerNav.classList.remove('active');
+    headerNav.classList.remove('activeMenu');
 }
 
 
@@ -56,3 +56,28 @@ for (i = 0; i < coll.length; i++) {
         }
     });
 }
+
+/* SLIDER TOPBAR: initializing swiper slider */
+var swiper = new Swiper(".mySwiper", {
+    // Show 1 card trong 1 slide
+    // Có khoảng cách giữa các card là 30px
+    //  slidesPerView: 1,
+    spaceBetween: 30,
+    centeredSlides: true,
+    grabCursor: true,
+    // Set chuyển động cho slide mỗi 2500s 1 lần next
+    // Khi di chuột vào (pauseOnMouse) thì dừng slide
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+    },
+    // Số card next trong 1 slide là 1 trên mỗi một card
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    navigation: {
+        prevEl: ".button--prev",
+        nextEl: ".button--next",
+    },
+});

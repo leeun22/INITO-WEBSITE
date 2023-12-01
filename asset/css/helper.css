@@ -353,6 +353,9 @@
     .jfi-center-md {
         justify-items: center;
     }
+    .f-nowrap-md {
+        flex-wrap: nowrap;
+    }
 }
 
 
